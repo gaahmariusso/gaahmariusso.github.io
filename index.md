@@ -2,6 +2,8 @@
 
 You can use the [editor on GitHub](https://github.com/gaahmariusso/gaahmariusso.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
+![image](https://user-images.githubusercontent.com/22088545/169176225-3c6f7dd1-306e-40a8-af89-ab8ff4b8ad98.png)
+
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
