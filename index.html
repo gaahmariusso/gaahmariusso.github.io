@@ -7,49 +7,92 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&family=The+Nautigal&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="https://dfilittobot.herokuapp.com/assets/modules/channel-web/inject.js"></script>
+    <script src="https://kit.fontawesome.com/81e34b5f33.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="https://gaahmariusso.github.io" class="branch"><img src="./img/logo.png" alt="Minha logo"
-                    title="Nome da minha logo"></a>
-            <nav class="menu">
-                <ul>
-                    <li><a class="menu-link" href="index.html">Início</a></li>
-                    <!-- <li><a class="menu-link" href="portfolio.html">Portfólio</a></li> -->
-                    <!-- <li><a class="menu-link" href="contato.html">Contato</a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="container">
-        <article class="super-card">
-            <section class="super-card-img">
-                <img src="./img/profile.png" alt="Foto de Gabriel Mariusso" , title="Gabriel Mariusso">
-                <h2>Gabriel Mariusso</h2>
+    <div class="container">
+        <div class="sidebar">
+
+            <div class="sidebar-content">
+                <div class="img-sidebar">
+                    <img src="./img/profile.png" alt="Minha logo" title="Nome da minha logo" />
+                </div>
+                <!--img -->
+
+
+                <div class="menu">
+                    <a class="selected" href="#">Sobre</a>
+                    <a href="#">Experiência</a>
+                    <a href="#">Educação</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+
+        </div>
+        <!--sidebar -->
+
+        <div class="content">
+
+            <section class="description">
+                <h1 class="">Gabriel <span>Mariusso</span></h1>
+                <div class="subheading">
+                    São Paulo - Brasil · (11) 99159-5153 · <a
+                        href="mailto:gabriel_mariusso@hotmail.com">gabriel_mariusso@hotmail.com</a>
+                </div>
+                <div class="about">
+                    <p>
+                        Atuo como SRE no Itaú Unibanco, desde 2021.
+                        Mais de 7 anos de experiencia na area de Tecnologia.
+                    </p>
+                    <p>
+                        Nos últimos anos foquei minha experiencia em Cloud Computing,
+                        praticas DevOps & SRE.
+                    </p>
+                    <br>
+                    <p>
+                        Como hobby, gosto de criar sites, amante de JavaScript, mergulhei de cabeça no React !
+                    </p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gabriel-mariusso/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/gaahmariusso" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/GaahMariusso" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/gabriel.mariusso.3/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
             </section>
-            <section class="super-card-text">
-                <p>
-                    Meu nome é Gabriel Mariusso, sou formado em Sistemas de Informacao pela
-                    Faculdade de Informática e Administração Paulista (FIAP)
-                </p>
-                <p>
-                    Atuo como SRE no Itau Unibanco, desde 2021.
-                    Nos ultimos anos foquei minha experiencia em Cloud Computing.
-                    Sempre atuei com back-end, em uma maior parte com Java e Spring.
-                </p>
-                <p>
-                    Como hobby, gosto de criar sites, amante de JavaScript, mergulhei de cabeca no React !
-                </p>
-            </section>
-        </article>
-    </main>
+
+        </div>
+        <!--content -->
+    </div>
+    <!--container -->
+
+
+    <!-- <section>
+                <div class="contato">
+                    <h2>Envie sua mensagem</h2>
+                    <form action="" class="form">
+                        <label for="nome" class="">Seu nome:</label>
+                        <input type="text" name="nome" id="nome" class="form-control" />
+                        <label for="email">Seu email:</label>
+                        <input type="text" name="email" id="email" class="form-control" />
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" name="assunto" id="assunto" class="form-control" />
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                        <input type="submit" class="btn btn-default" name="enviar" value="Enviar mensagem &raquo;" />
+                    </form>
+                </div>
+            </section> -->
 </body>
 
 </html>
