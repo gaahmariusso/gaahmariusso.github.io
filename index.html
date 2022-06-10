@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <meta name="Gabriel Mariusso" content="" />
 
+    <title>Resume - Gabriel Mariusso</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon-yellow.ico">
     <link
         href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&family=The+Nautigal&display=swap"
         rel="stylesheet">
@@ -16,38 +19,52 @@
     <script src="https://kit.fontawesome.com/81e34b5f33.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="page-top">
 
-    <div class="container">
-        <div class="sidebar">
+    <!--navbar -->
+    <nav class="navbar" id="sideNav">
+        <a class="navbar-brand" href="#page-top">
+            <!-- <span class="d-block d-lg-none">GMariusso</span> -->
+            <span>
+                <img class="img-profile" src="./assets/img/profile.png" alt="Minha logo" title="Nome da minha logo" />
+            </span>
+        </a>
 
-            <div class="sidebar-content">
-                <div class="img-sidebar">
-                    <img src="./img/profile.png" alt="Minha logo" title="Nome da minha logo" />
-                </div>
-                <!--img -->
-
-
-                <div class="menu">
-                    <a class="selected" href="#">Sobre</a>
-                    <a href="#">Experiência</a>
-                    <a href="#">Educação</a>
-                    <a href="#">Contato</a>
-                </div>
-            </div>
-
+        <div class="menu">
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-about" href="#about" onclick=changeColor()>Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-experience" href="#experience" onclick=changeColor()>Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-education" href="#education" onclick=changeColor()>Formação
+                        Acadêmica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-skills" href="#skills" onclick=changeColor()>Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-awards" href="#awards" onclick=changeColor()>Certificados</a>
+                </li>
+            </ul>
         </div>
-        <!--sidebar -->
+    </nav>
 
-        <div class="content">
+    <!-- Page Content-->
+    <div class="container p-0">
 
-            <section class="description">
-                <h1 class="">Gabriel <span>Mariusso</span></h1>
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="about-content">
+                <h1 class="about-title">Gabriel <span>Mariusso</span></h1>
                 <div class="subheading">
-                    São Paulo - Brasil · (11) 99159-5153 · <a
-                        href="mailto:gabriel_mariusso@hotmail.com">gabriel_mariusso@hotmail.com</a>
+                    <p>São Paulo - Brasil · (11) 99159-5153 ·
+                        <a href="mailto:gabriel_mariusso@hotmail.com">gabriel_mariusso@hotmail.com</a>
+                    </p>
                 </div>
-                <div class="about">
+                <div class="about-me">
                     <p>
                         Atuo como SRE no Itaú Unibanco, desde 2021.
                         Mais de 7 anos de experiencia na area de Tecnologia.
@@ -69,30 +86,193 @@
                     <a href="https://www.facebook.com/gabriel.mariusso.3/" target="_blank"><i
                             class="fa-brands fa-facebook-f"></i></a>
                 </div>
-            </section>
+            </div>
+            <!--about-content -->
+        </section>
+        <hr class="m-0">
 
-        </div>
-        <!--content -->
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="experience-content">
+                <h2 class="mb-3">Experiências</h2>
+                <div class="d-flex flex-column flex-md-row mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Software Engineer | Site Reliability Engineer</h3>
+                        <div class="subheading mb-3">Itaú Unibanco</div>
+                        <p>Práticas de DevOps e SREs, desenvolvimento contínuo, testes contínuos, IaC, CI/CD, cultura
+                            enxuta, metodologias ágeis, monitoramento, observabilidade, eliminação de labuta, automação
+                            e finOps. Inserido num projeto de modernização e transformação digital. Meu dia a dia como
+                            SRE está resolvendo problemas e aumentando a regra de qualidade da nossa plataforma. O foco
+                            deste trabalho é o monitoramento e padronização da observabilidade, desenvolvimento de
+                            automação, análise de desempenho e planejamento de capacidade.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Julho 2021 - o momento</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">IT Analyst</h3>
+                        <div class="subheading mb-3">BTG Pactual digital</div>
+                        <p>Suporte da plataforma de banco BTG Pactual Digital. Front-end em AngularJS, HTML5 e SASS.
+                            Back-end utilizando JPA/EclipseLink, EJB em ambiente monolítico e JPA/Hibernate,
+                            Spring/Springboot em ambiente de microsserviço.
+                            Banco de Dados Oracle.
+                            Maven para gerenciamento de dependências.
+                            Versionamento no Github.
+                            Cloud Computing AWS recursos usados como: SQS, SNS, DynamoDB, API Gateway e CloudWatch
+                            Rules.
+                            Desenvolvimento e implementação em projeto criado para automatizar processos, utilizando
+                            Javascript, webpack e serviços na nuvem AWS como S3 e RDS.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Maio 2019 - Julho 2021</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Systems Analyst | PHP Web Developer</h3>
+                        <div class="subheading mb-3">Finnet</div>
+                        <p>Desenvolvedor PHP em equipe multidisciplinar. Além de desenvolver, havendo backlog, atuava em
+                            kick-off`s para levantamento de requisitos.
+                            Execução de casos de testes funcionais. Execução de planejamentos, sprints e diárias como
+                            Product Owner.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="text-primary">Setembro 2014 - Fevereiro 2019</span>
+                    </div>
+                </div>
+            </div>
+            <!--experience-content -->
+        </section>
+        <hr class="m-0">
+
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="education-content">
+                <h2 class="mb-3">Formação Acadêmica</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Faculdade de Informática e Administração Paulista (FIAP)</h3>
+                        <div class="subheading mb-3">Bacharelado: 4 anos</div>
+                        <p>Sistemas de Informação - Engenharia de Software & DevOps</p>
+                        <p>Total de carga horária: 3520 horas</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="date-education text-primary">Fevereiro 2014 - Novembro 2017</span>
+                    </div>
+                </div>
+            </div>
+            <!--education-content -->
+        </section>
+        <hr class="m-0">
+
+        <!-- Skilss-->
+        <section class="resume-section" id="skills">
+            <div class="skills-content">
+                <h2 class="mb-3">Habilidades</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                    <div class="flex-grow-1">
+                        <div class="subheading-skills mb-1">Ferramentas e Linguagens de Programação</div>
+                        <ul class="list-inline dev-icons">
+                            <li class="list-inline-item">
+                                <img src="./assets/img/amazon.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/docker.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/kubernetes.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/terraform.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/kibana.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/splunk.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/prometheus.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/grafana.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/sql.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/js.png" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="./assets/img/java.png" alt="">
+                            </li>
+                        </ul>
+                        <div class="subheading-skills mb-1">Soft Skills</div>
+                        <p><i class="fa-solid fa-check"></i>Autodidata</p>
+                        <p><i class="fa-solid fa-check"></i>Senso crítico</p>
+                        <p><i class="fa-solid fa-check"></i>Colaboração</p>
+                        <p><i class="fa-solid fa-check"></i>Adaptabilidade</p>
+                        <p><i class="fa-solid fa-check"></i>Gerenciamento de tempo</p>
+                        <br>
+                        <br>
+                        <div class="subheading-skills mb-1">Hard Skills</div>
+                        <p><i class="fa-solid fa-check"></i>Cloud Computing</p>
+                        <p><i class="fa-solid fa-check"></i>Desenvolvimento de software</p>
+                        <p><i class="fa-solid fa-check"></i>Raciocínio Analítico</p>
+                        <p><i class="fa-solid fa-check"></i>Gestão de Pessoas</p>
+                        <p><i class="fa-solid fa-check"></i>Metodologias ágeis</p>
+                    </div>
+                </div>
+            </div>
+            <!--skills-content -->
+        </section>
+        <hr class="m-0">
+
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="awards-content">
+                <h2 class="mb-3">Certificados</h2>
+                <ul class="fa-ul mb-0">
+                    <div class="subheading-skills mb-1">CertiProf</div>
+                    <li>
+                        <img src="./assets/img/diploma.png" alt="">
+                        DevOps Essentials Professional Certificate (DEPC)
+                    </li>
+                    <li>
+                        <img src="./assets/img/diploma.png" alt="">
+                        Scrum Foundation Professional Certificate (SFPC)
+                    </li>
+                    <li>
+                        <img src="./assets/img/diploma.png" alt="">
+                        Remote Work and Virtual Collaboration
+                    </li>
+                </ul>
+                <ul class="fa-ul mb-0">
+                    <div class="subheading-skills mb-1">Conquer</div>
+                    <li>
+                        <img src="./assets/img/diploma.png" alt="">
+                        Certificado Curso Inteligencia Emocional
+                    </li>
+                    <li>
+                        <img src="./assets/img/diploma.png" alt="">
+                        Certificado Comunicação & Oratória
+                    </li>
+                </ul>
+            </div>
+            <!--awards-content -->
+        </section>
+        <hr class="m-0">
+
     </div>
     <!--container -->
 
-
-    <!-- <section>
-                <div class="contato">
-                    <h2>Envie sua mensagem</h2>
-                    <form action="" class="form">
-                        <label for="nome" class="">Seu nome:</label>
-                        <input type="text" name="nome" id="nome" class="form-control" />
-                        <label for="email">Seu email:</label>
-                        <input type="text" name="email" id="email" class="form-control" />
-                        <label for="assunto">Assunto:</label>
-                        <input type="text" name="assunto" id="assunto" class="form-control" />
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
-                        <input type="submit" class="btn btn-default" name="enviar" value="Enviar mensagem &raquo;" />
-                    </form>
-                </div>
-            </section> -->
+    <!-- Core theme JS-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
