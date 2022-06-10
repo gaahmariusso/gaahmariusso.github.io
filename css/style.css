@@ -137,6 +137,11 @@ ul {
     color: #fff;
 }
 
+.actived {
+    opacity: 1;
+    color: #fff;
+}
+
 .img-profile {
     width: 70%;
     border: 0.3rem solid lightblue;

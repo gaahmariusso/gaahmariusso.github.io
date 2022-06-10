@@ -1,16 +1,24 @@
 function changeColor() {
 
-    // document.getElementById("nav-about").style.opacity = 0.5;
-    // document.getElementById("nav-experience").style.opacity = 0.5;
-    // document.getElementById("nav-education").style.opacity = 0.5;
-    // document.getElementById("nav-skills").style.opacity = 0.5;
-    // document.getElementById("nav-awards").style.opacity = 0.5;
+    const about = document.getElementById("nav-about")
+    about.className = "nav-link"
+
+    const experience = document.getElementById("nav-experience")
+    experience.className = "nav-link"
+
+    const education = document.getElementById("nav-education")
+    education.className = "nav-link"
+
+    const skills = document.getElementById("nav-skills")
+    skills.className = "nav-link"
+
+    const awards = document.getElementById("nav-awards")
+    awards.className = "nav-link"
 
     const el = document.getElementById("navbar-nav");
     el.addEventListener('click', function (e) {
         target = e.target.id;
-
-        // document.getElementById(target).style.opacity = 1;
-        // document.getElementById(target).style.color = "#fff";
+        el2 = document.getElementById(target)
+        el2.className = "nav-link actived";
     });
 }
