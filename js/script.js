@@ -1,3 +1,8 @@
+window.onload = function () {
+    const about = document.getElementById("nav-about")
+    about.className = "nav-link actived"
+}
+
 function changeColor() {
 
     const about = document.getElementById("nav-about")
